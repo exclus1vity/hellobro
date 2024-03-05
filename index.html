@@ -1,0 +1,139 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/147black.png" type="image/png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/point.js"></script>
+    <script src="js/blocker.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/x.js"></script>
+
+<script>
+
+    function audioPlay() {
+        var audio = document.getElementById("audio");
+        audio.volume = 1.0;
+        audio.currentTime = 0;
+        audio.play();
+    }
+</script></head>
+
+
+<body><audio loop="" preload="auto" id="audio">
+    <source src="media/sidokamusica.mp3" type="audio/mpeg">
+</audio>
+
+<input type="checkbox" autocomplete="off" id="overlay-toggle">
+<div class="overlay fullscreen">
+    <label for="overlay-toggle" onclick="audioPlay(); ">
+        <span class="overlayhover hover" style="font-family: 'Roboto', sans-serif; font-size: small;"><img src="images/blackcruz.gif", 
+            >click</button></span>
+
+
+    </label>
+</div>
+
+
+    <video autoplay="" loop="" muted="">
+        <source src="media/sidokavideo.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+    </video>
+
+    <div class="all">
+        <div class="discord-profile">
+            <div class="profile animate__animated animate__fadeInUp animate__fast">
+                <div class="pfp">
+                    <img class="profile-img" data-user-id="692147855112142858" src="#">
+
+                </div>
+
+                <div class="nickr"> arthur </div>
+                <div class="nick subnick"> sem tempo p vagabunda 🤏🏻 </div>
+                <div class="badges">
+
+                    <!-- pig -->
+                   <div class="badge" style="background-image: url('images/piug.png');" data-tooltip="Apoiador Inicial"></div>
+                    <!-- nitro -->
+                    <div class="badge" style="background-image: url('images/1895-subscriber-nitro-animated.gif');" data-tooltip="Assinante desde 23 de jan. de 2024"></div>
+
+                </div>
+
+                <div class="nick subnick">  </div>
+
+                <div class="social-buttons">
+
+                    <a href="https://www.instagram.com/arthuryxzz/" target="_blank" class="social-button">
+                        <i class="fab fa-instagram social-icon"></i>
+
+                        
+                    <a href="https://steamcommunity.com/id/hellosuicide/" target="_blank" class="social-button">
+                        <i class="fab fa-steam social-icon"></i>
+                    </a>
+
+                    <a href="https://discord.com/users/692147855112142858" target="_blank" class="social-button">
+                        <i class="fab fa-discord social-icon"></i>
+                    </a>
+
+
+               
+
+                </div>
+
+                <div class="server-button">
+                    <div class="server-button-text">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+                
+</script>
+<script>
+  const palavras = ['à procura', 'da minha', 'ex'];
+
+  function digitar_palavra(palavra_a, letra_a) {
+      if (palavra_a < palavras.length) {
+          const palavra_att = palavras[palavra_a];
+
+          if (letra_a <= palavra_att.length) {
+              document.title = palavra_att.substring(0, letra_a);
+
+              setTimeout(() => {
+                  digitar_palavra(palavra_a, letra_a + 1);
+              }, 200);
+          } else {
+              setTimeout(() => {
+                  document.title = ''; 
+                  digitar_palavra(palavra_a + 1, 0);
+              }, 500);
+          }
+      } else {
+          setTimeout(() => {
+              digitar_palavra(0, 0);
+          }, 500);
+      }
+  }
+
+  digitar_palavra(0, 0);
+</script>
+
+
+
+
+<script>
+    VanillaTilt.init(document.querySelectorAll('.discord-profile'), {
+        glare: true,
+        maxGlare: 0.3,
+        gyroscope: false,
+        scale: 1.02,
+    });
+</script>
+
+
+</div></body></html>
